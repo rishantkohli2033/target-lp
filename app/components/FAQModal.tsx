@@ -209,7 +209,7 @@ export default function FAQModal({ isOpen, onClose }: FAQModalProps) {
                 <div className="px-6 pb-6 sm:px-8 sm:pb-8 pt-2">
                   <button
                     onClick={onClose}
-                    className="w-full bg-gradient-to-r from-red-600 to-purple-700 hover:from-red-500 hover:to-red-600 text-white font-semibold py-3 sm:py-4 rounded-xl transition-all duration-300 shadow-lg hover:shadow-red-500/50"
+                    className="w-full bg-gradient-to-r from-red-800 to-red-900 hover:from-red-700 hover:to-red-800 text-white font-semibold py-3 sm:py-4 rounded-xl transition-all duration-300 shadow-lg hover:shadow-red-500/50"
                   >
                     Got it, thanks!
                   </button>

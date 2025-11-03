@@ -48,7 +48,7 @@ export default function Home() {
       </div>
 
       {/* Centered Content */}
-      <div className="flex flex-1 flex-col items-center justify-center w-full max-w-4xl mx-auto px-4 sm:px-6 mt-0 sm:-mt-8 md:-mt-[10rem]">
+      <div className="flex flex-col items-center w-full max-w-4xl mx-auto px-4 sm:px-6 pt-8 sm:pt-12 md:pt-16 pb-16">
         <span className="inline-block bg-red-600/70 text-red-100 px-4 py-1.5 rounded-full text-xs font-medium border border-red-400/60 mb-6 sm:mb-8">
           New Feedback Program
         </span>
@@ -72,10 +72,10 @@ export default function Home() {
         {/* Social Proof */}
         <div className="flex items-center gap-3 mb-8">
           <div className="flex -space-x-2">
-            <div className="w-8 h-8 rounded-full bg-gradient-to-br from-red-400 to-pink-400 border-2 border-slate-900 flex items-center justify-center text-white text-xs font-semibold">JM</div>
-            <div className="w-8 h-8 rounded-full bg-gradient-to-br from-blue-400 to-cyan-400 border-2 border-slate-900 flex items-center justify-center text-white text-xs font-semibold">SK</div>
-            <div className="w-8 h-8 rounded-full bg-gradient-to-br from-orange-400 to-yellow-400 border-2 border-slate-900 flex items-center justify-center text-white text-xs font-semibold">AL</div>
-            <div className="w-8 h-8 rounded-full bg-gradient-to-br from-green-400 to-emerald-400 border-2 border-slate-900 flex items-center justify-center text-white text-xs font-semibold">DR</div>
+            <div className="w-8 h-8 rounded-full bg-gradient-to-br from-red-400 to-pink-400 border-[1px] border-slate-900 flex items-center justify-center text-white text-xs font-semibold">JM</div>
+            <div className="w-8 h-8 rounded-full bg-gradient-to-br from-blue-400 to-cyan-400 border-[1px] border-slate-900 flex items-center justify-center text-white text-xs font-semibold">SK</div>
+            <div className="w-8 h-8 rounded-full bg-gradient-to-br from-orange-400 to-yellow-400 border-[1px] border-slate-900 flex items-center justify-center text-white text-xs font-semibold">AL</div>
+            <div className="w-8 h-8 rounded-full bg-gradient-to-br from-green-400 to-emerald-400 border-[1px] border-slate-900 flex items-center justify-center text-white text-xs font-semibold">DR</div>
           </div>
           <div className="text-left">
             <div className="flex items-center gap-1">
@@ -101,7 +101,7 @@ export default function Home() {
         {/* FAQ Trigger Button */}
         <button
           onClick={() => setIsFAQOpen(true)}
-          className="cursor-pointer text-gray-400 hover:text-white font-medium text-sm sm:text-base flex items-center gap-1 transition-colors mb-8 sm:mb-12 underline decoration-gray-500/50 hover:decoration-white underline-offset-4 mr-2"
+          className="cursor-pointer text-gray-200 hover:text-white font-medium text-sm sm:text-base flex items-center gap-1 transition-colors mb-8 sm:mb-12 underline decoration-gray-500/50 hover:decoration-white underline-offset-4 mr-2"
         >
           <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
