@@ -8,13 +8,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        halloweenOrange: "#FF7518",
-        spookyBlack: "#1C1C1C",
-        ghostWhite: "#F8F8F8",
-        pumpkinYellow: "#FFB84C",
-      },
-      fontFamily: {
-        spooky: ["Creepster", "cursive"],
+        targetRed: "#CC0000",
+        targetDarkRed: "#990000",
+        targetWhite: "#FFFFFF",
+        targetGray: "#F0F0F0",
       },
     },
   },

@@ -19,9 +19,9 @@ function FAQItem({ question, answer, index }: FAQItemProps) {
       transition={{ duration: 0.4, delay: index * 0.1 }}
       className="group"
     >
-      <div className="relative bg-gradient-to-br from-slate-800/60 via-purple-900/40 to-slate-900/60 backdrop-blur-xl border border-purple-400/20 rounded-2xl overflow-hidden shadow-xl hover:shadow-purple-500/20 transition-all duration-300 hover:border-purple-400/40">
+      <div className="relative bg-gradient-to-br from-slate-800/60 via-red-900/40 to-slate-900/60 backdrop-blur-xl border border-red-400/20 rounded-2xl overflow-hidden shadow-xl hover:shadow-red-500/20 transition-all duration-300 hover:border-red-400/40">
         {/* Premium glow effect */}
-        <div className="absolute inset-0 bg-gradient-to-r from-purple-600/0 via-purple-600/5 to-purple-600/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+        <div className="absolute inset-0 bg-gradient-to-r from-red-600/0 via-red-600/5 to-red-600/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
         <button
           onClick={() => setIsOpen(!isOpen)}
@@ -38,7 +38,7 @@ function FAQItem({ question, answer, index }: FAQItemProps) {
             className="flex-shrink-0 mt-1"
           >
             <svg
-              className="w-5 h-5 text-yellow-400"
+              className="w-5 h-5 text-red-400"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -63,7 +63,7 @@ function FAQItem({ question, answer, index }: FAQItemProps) {
               className="overflow-hidden"
             >
               <div className="px-5 pb-4 sm:px-6 sm:pb-5 pt-0">
-                <div className="border-t border-purple-400/20 pt-3 sm:pt-4">
+                <div className="border-t border-red-400/20 pt-3 sm:pt-4">
                   <motion.p
                     initial={{ y: -10, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
@@ -148,11 +148,11 @@ export default function FAQModal({ isOpen, onClose }: FAQModalProps) {
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 exit={{ opacity: 0, scale: 0.95, y: 20 }}
                 transition={{ duration: 0.3, ease: "easeOut" }}
-                className="relative w-full max-w-2xl bg-gradient-to-br from-slate-900 via-purple-900/50 to-slate-900 border border-purple-400/30 rounded-3xl shadow-2xl shadow-purple-500/20 overflow-hidden"
+                className="relative w-full max-w-2xl bg-gradient-to-br from-slate-900 via-red-900/50 to-slate-900 border border-red-400/30 rounded-3xl shadow-2xl shadow-red-500/20 overflow-hidden"
                 onClick={(e) => e.stopPropagation()}
               >
                 {/* Header */}
-                <div className="relative px-6 pt-6 pb-4 sm:px-8 sm:pt-8 sm:pb-6 border-b border-purple-400/20">
+                <div className="relative px-6 pt-6 pb-4 sm:px-8 sm:pt-8 sm:pb-6 border-b border-red-400/20">
                   <motion.div
                     initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -160,7 +160,7 @@ export default function FAQModal({ isOpen, onClose }: FAQModalProps) {
                     className="pr-10 sm:pr-12"
                   >
                     <h2 className="text-2xl sm:text-3xl font-bold text-center mb-2">
-                      <span className="bg-gradient-to-r from-white via-purple-200 to-white bg-clip-text text-transparent">
+                      <span className="bg-gradient-to-r from-white via-red-200 to-white bg-clip-text text-transparent">
                         Frequently Asked Questions
                       </span>
                     </h2>
@@ -209,7 +209,7 @@ export default function FAQModal({ isOpen, onClose }: FAQModalProps) {
                 <div className="px-6 pb-6 sm:px-8 sm:pb-8 pt-2">
                   <button
                     onClick={onClose}
-                    className="w-full bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-500 hover:to-purple-600 text-white font-semibold py-3 sm:py-4 rounded-xl transition-all duration-300 shadow-lg hover:shadow-purple-500/50"
+                    className="w-full bg-gradient-to-r from-red-600 to-purple-700 hover:from-red-500 hover:to-red-600 text-white font-semibold py-3 sm:py-4 rounded-xl transition-all duration-300 shadow-lg hover:shadow-red-500/50"
                   >
                     Got it, thanks!
                   </button>

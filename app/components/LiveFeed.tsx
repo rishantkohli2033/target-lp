@@ -23,12 +23,12 @@ const getInitials = (name: string) => {
 // Helper function to get random avatar color
 const getAvatarColor = (id: string) => {
   const colors = [
-    'from-purple-400 to-pink-400',
+    'from-red-400 to-pink-400',
     'from-blue-400 to-cyan-400',
-    'from-orange-400 to-yellow-400',
+    'from-orange-400 to-red-400',
     'from-green-400 to-emerald-400',
     'from-pink-400 to-rose-400',
-    'from-indigo-400 to-purple-400',
+    'from-indigo-400 to-red-400',
   ];
   // Use id to consistently get same color for same user
   const index = parseInt(id.substring(0, 8), 36) % colors.length;
@@ -87,10 +87,10 @@ export default function LiveFeed() {
           exit={{ opacity: 0, x: 50, scale: 0.95 }}
           transition={{ duration: 0.4, ease: "easeOut" }}
         >
-          <div className="bg-gradient-to-br from-purple-900/20 to-black/40 backdrop-blur-2xl border border-white/10 rounded-lg sm:rounded-xl shadow-[0_8px_32px_0_rgba(0,0,0,0.8),0_0_24px_0_rgba(168,85,247,0.4)] p-2.5 sm:p-4 max-w-[180px] sm:max-w-[320px]">
+          <div className="bg-gradient-to-br from-red-900/20 to-black/40 backdrop-blur-2xl border border-white/10 rounded-lg sm:rounded-xl shadow-[0_8px_32px_0_rgba(0,0,0,0.8),0_0_24px_0_rgba(168,85,247,0.4)] p-2.5 sm:p-4 max-w-[180px] sm:max-w-[320px]">
             <div className="flex items-start gap-2 sm:gap-3">
               {/* Avatar */}
-              <div className={`w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gradient-to-br ${getAvatarColor(currentItem.id)} flex items-center justify-center text-white text-xs sm:text-sm font-semibold flex-shrink-0 border border-purple-300/40 shadow-lg`}>
+              <div className={`w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gradient-to-br ${getAvatarColor(currentItem.id)} flex items-center justify-center text-white text-xs sm:text-sm font-semibold flex-shrink-0 border border-red-300/40 shadow-lg`}>
                 {getInitials(currentItem.name)}
               </div>
 
@@ -99,13 +99,13 @@ export default function LiveFeed() {
                 <p className="text-white font-semibold text-xs sm:text-sm mb-0.5 sm:mb-1">
                   {currentItem.name}
                 </p>
-                <p className="text-purple-200 text-[10px] sm:text-xs mb-1 sm:mb-1.5">
-                  <span className="text-purple-300">from</span> {currentItem.location}
+                <p className="text-red-200 text-[10px] sm:text-xs mb-1 sm:mb-1.5">
+                  <span className="text-red-300">from</span> {currentItem.location}
                 </p>
                 <div className="flex items-center gap-1 sm:gap-1.5">
-                  <span className="text-yellow-400 text-[10px] sm:text-xs font-medium">✓</span>
-                  <p className="text-purple-100 text-[10px] sm:text-xs">
-                    {currentItem.action} <span className="text-yellow-400 font-semibold">{currentItem.amount}</span>
+                  <span className="text-red-400 text-[10px] sm:text-xs font-medium">✓</span>
+                  <p className="text-red-100 text-[10px] sm:text-xs">
+                    {currentItem.action} <span className="text-red-400 font-semibold">{currentItem.amount}</span>
                   </p>
                 </div>
               </div>

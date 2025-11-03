@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Spirit Halloween - Share Your Feedback",
-  description: "Share your thoughts about Spirit Halloween and earn $100. Help us improve your shopping experience.",
+  title: "Target - Share Your Feedback",
+  description: "Share your thoughts about Target and earn $100. Help us improve your shopping experience.",
 };
 
 export default function RootLayout({
