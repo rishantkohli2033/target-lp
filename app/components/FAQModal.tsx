@@ -19,7 +19,7 @@ function FAQItem({ question, answer, index }: FAQItemProps) {
       transition={{ duration: 0.4, delay: index * 0.1 }}
       className="group"
     >
-      <div className="relative bg-gradient-to-br from-slate-800/60 via-red-900/40 to-slate-900/60 backdrop-blur-xl border border-red-400/20 rounded-2xl overflow-hidden shadow-xl hover:shadow-red-500/20 transition-all duration-300 hover:border-red-400/40">
+      <div className="relative bg-gradient-to-br from-black/60 via-red-950/40 to-red-900/60 backdrop-blur-xl border border-red-400/20 rounded-2xl overflow-hidden shadow-xl hover:shadow-red-500/20 transition-all duration-300 hover:border-red-400/40">
         {/* Premium glow effect */}
         <div className="absolute inset-0 bg-gradient-to-r from-red-600/0 via-red-600/5 to-red-600/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
@@ -148,7 +148,7 @@ export default function FAQModal({ isOpen, onClose }: FAQModalProps) {
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 exit={{ opacity: 0, scale: 0.95, y: 20 }}
                 transition={{ duration: 0.3, ease: "easeOut" }}
-                className="relative w-full max-w-2xl bg-gradient-to-br from-slate-900 via-red-900/50 to-slate-900 border border-red-400/30 rounded-3xl shadow-2xl shadow-red-500/20 overflow-hidden"
+                className="relative w-full max-w-2xl bg-gradient-to-br from-black via-red-950/50 to-red-900 border border-red-400/30 rounded-3xl shadow-2xl shadow-red-500/20 overflow-hidden"
                 onClick={(e) => e.stopPropagation()}
               >
                 {/* Header */}

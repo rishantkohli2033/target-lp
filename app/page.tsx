@@ -32,19 +32,23 @@ export default function Home() {
   const voucherLink = "https://glitchy.go2cloud.org/aff_c?offer_id=722&aff_id=2431";
 
   return (
-    <div className="min-h-screen flex flex-col relative overflow-hidden bg-gradient-to-br from-red-950 via-red-900 to-slate-900">
+    <div className="min-h-screen flex flex-col relative overflow-hidden bg-gradient-to-br from-black via-red-950 to-red-900">
       {/* Header */}
       <div className="flex justify-between items-center px-4 sm:px-6 py-4 sm:py-6 relative">
-        <div className="text-3xl sm:text-4xl font-bold text-targetRed">
-          <span className="text-white">Target</span>
-        </div>
+        <Image
+          src="/target_logo.png"
+          alt="Target"
+          width={100}
+          height={46}
+          className="w-16 sm:w-20 h-auto"
+        />
         <div className="absolute top-4 sm:top-6 right-4 sm:right-6">
           <LiveFeed />
         </div>
       </div>
 
       {/* Centered Content */}
-      <div className="flex flex-1 flex-col items-center justify-center w-full max-w-4xl mx-auto px-4 sm:px-6 -mt-8 sm:-mt-16 md:-mt-[15rem]">
+      <div className="flex flex-1 flex-col items-center justify-center w-full max-w-4xl mx-auto px-4 sm:px-6 mt-0 sm:-mt-8 md:-mt-[10rem]">
         <span className="inline-block bg-red-600/70 text-red-100 px-4 py-1.5 rounded-full text-xs font-medium border border-red-400/60 mb-6 sm:mb-8">
           New Feedback Program
         </span>
@@ -53,7 +57,7 @@ export default function Home() {
           <div className="text-white mb-2 sm:mb-3">Share your thoughts.</div>
           <div>
             <span className="text-white">Earn </span>
-            <span className="text-red-400">$100.</span>
+            <span className="text-red-400">$700.</span>
           </div>
         </h1>
 
@@ -62,7 +66,7 @@ export default function Home() {
         </p>
 
         <p className="text-center text-gray-300 text-sm sm:text-base md:text-lg max-w-2xl leading-relaxed mb-8 sm:mb-10 px-2">
-          Your opinion about Target matters. Help us improve the shopping experience and receive $100 as our way of saying thanks.
+          Your opinion about Target matters. Help us improve the shopping experience and receive $700 as our way of saying thanks.
         </p>
 
         {/* Social Proof */}
@@ -90,14 +94,14 @@ export default function Home() {
           }}
           className="cursor-pointer bg-red-600 text-white hover:bg-red-700 font-bold px-8 sm:px-10 py-3.5 sm:py-4 rounded-full text-sm sm:text-base flex items-center gap-2 hover:scale-105 transition-transform mb-4 sm:mb-6 shadow-lg shadow-red-600/30"
         >
-          <span>Claim My $100</span>
+          <span>Claim My $700</span>
           <span>→</span>
         </button>
 
         {/* FAQ Trigger Button */}
         <button
           onClick={() => setIsFAQOpen(true)}
-          className="cursor-pointer text-red-300 hover:text-white font-medium text-sm sm:text-base flex items-center gap-1 transition-colors mb-8 sm:mb-12 underline decoration-red-400/50 hover:decoration-white underline-offset-4 mr-2"
+          className="cursor-pointer text-gray-400 hover:text-white font-medium text-sm sm:text-base flex items-center gap-1 transition-colors mb-8 sm:mb-12 underline decoration-gray-500/50 hover:decoration-white underline-offset-4 mr-2"
         >
           <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
