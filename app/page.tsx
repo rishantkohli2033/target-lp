@@ -36,7 +36,7 @@ export default function Home() {
       {/* Header */}
       <div className="flex justify-between items-center px-4 sm:px-6 py-4 sm:py-6 relative">
         <Image
-          src="/target_logo.png"
+          src="/Target_logo.png"
           alt="Target"
           width={100}
           height={46}
